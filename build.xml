@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="maprules" default="dist" basedir=".">
+
+    <!-- enter the SVN commit message -->
+    <property name="commit.message" value="Commit message"/>
+    <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
+    <property name="plugin.main.version" value="14066"/>
+    <property name="plugin.version" value="${version.entry.commit.revision}"/>
+    <property name="plugin.author" value="Max Grossman"/>
+    <property name="plugin.class" value="maprules.MapRulesPlugin"/>
+    <property name="plugin.description" value="Custom Presets and Validation rules"/>
+    <property name="plugin.icon" value="images/maprules.svg"/>
+    <property name="plugin.link" value="..."/>
+    <!--<property name="plugin.early" value="..."/>-->
+    <!--<property name="plugin.requires" value="..."/>-->
+    <!--<property name="plugin.stage" value="..."/>-->
+	<property name="plugin.canloadatruntime" value="true"/>
+    <!-- ** include targets that all plugins have in common ** -->
+    <import file="../build-common.xml"/>
+
+</project>
